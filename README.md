@@ -39,19 +39,43 @@ self-driving-car/
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/self-driving-car.git
-   cd self-driving-car
-   ```
+### 1. Clone the Repository
 
-2. **Run the simulation**
-   Open `index.html` from any of the project phase folders in your browser — no build tools or dependencies required.
+```bash
+git clone https://github.com/rohanchristos/AI_car_SIMULATION.git
+cd AI_car_SIMULATION
+```
 
-3. **Train the car**
-   - Click the 💾 save button to store a good-performing brain
-   - Click the 🗑️ delete button to discard a saved brain
-   - Refresh the page to generate new mutations from the saved brain
+### 2. Run the Simulation
+
+This is a pure HTML/JS project — no `npm install` or build step required. Just serve the files using any of these methods:
+
+#### Option A: VS Code Live Server (Recommended)
+1. Install the **Live Server** extension in VS Code
+2. Open any phase folder (e.g. `9. Fine-tuning/`)
+3. Right-click `index.html` → **"Open with Live Server"**
+
+#### Option B: Python HTTP Server
+```bash
+cd "9. Fine-tuning"
+python -m http.server 8080
+```
+Then open [http://localhost:8080](http://localhost:8080) in your browser.
+
+#### Option C: npx serve
+```bash
+npx -y serve "9. Fine-tuning"
+```
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+> **💡 Tip:** Start with the **`9. Fine-tuning`** folder — it's the most complete version with the full self-driving AI and neural network visualization.
+
+### 3. Train the Car
+
+- Click 💾 **Save** to store a good-performing brain to `localStorage`
+- Click 🗑️ **Discard** to clear the saved brain
+- **Refresh** the page to generate new mutations from the saved brain
+- Repeat the save → refresh cycle to evolve smarter driving over time
 
 ## 🧠 How It Works
 
